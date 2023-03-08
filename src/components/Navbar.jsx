@@ -24,10 +24,10 @@ export const Navbar = () => {
             <nav className="navbar fixed-top navbar-expand-lg bg-body-tertiary m-0 p-0">
                 <div className="container-fluid bg-light">
                     <Link className="navbar-brand text-danger border p-2 m-2 shadow myAmin" to="/"><b>NEWS Feed</b></Link>
-                    <button className="navbar-toggler m-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
+                    <button  className="navbar-toggler m-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon" ></span>
                     </button>
-                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div className="collapse navbar-collapse" id="navbarSupportedContent" style={{backgroundColor:"#ce0d0d;"}}>
                         <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li className="nav-item">
                                 <Link className="nav-link active" aria-current="page" to="/">Home</Link>

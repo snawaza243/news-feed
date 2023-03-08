@@ -10,6 +10,7 @@ import { Disclaimer } from './pages/Disclaimer'
 import { Privacy } from './pages/Privacy'
 import { Term } from './pages/Term'
 import './App.css'
+// import EmailContactForm from './components/MailUs'
 function App() {
   return (
     <>
@@ -23,7 +24,10 @@ function App() {
           <Route path='/health' element={<FetchData cat="health" />} />
           <Route path='/entertainment' element={<FetchData cat="entertainment" />} />
           <Route path='/about' element={<About />} />
+          {/* <Route path='/contact' element={<Contact />} /> */}
+
           <Route path='/contact' element={<Contact />} />
+
           <Route path='/disclaimer' element={<Disclaimer />} />
           <Route path='/privacy' element={<Privacy />} />
           <Route path='/terms' element={<Term />} />

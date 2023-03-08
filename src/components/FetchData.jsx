@@ -15,7 +15,7 @@ export const FetchData = ({ cat }) => {
   const fetchData = async () => {
     await axios
       .get(
-        cat ? `https://newsapi.org/v2/top-headlines?country=${random_item(items)}&category=${cat}&apiKey=564424204fdc497b997d68e957fbaff0`
+        cat ? `https://newsapi.org/v2/top-headlines?country=us&category=${cat}&apiKey=564424204fdc497b997d68e957fbaff0`
           : "https://newsapi.org/v2/top-headlines?country=us&category=general&apiKey=564424204fdc497b997d68e957fbaff0")
       .then((res) => setData(res.data.articles));
 
