@@ -2,51 +2,41 @@ import React from 'react'
 
 export const Privacy = () => {
   return (
-    <div className='my-5' style={{ minHeight: "100vh" }}>
-      <div className='p-4'>
-        <h4>
-          Privacy Policy for News Feed
-
-        </h4>
+    <div classNameName='m-5' style={{ minHeight: "100vh", marginTop: "80px" }}>
+      <div classNameName='p-4 py-5'>
+        <div className='container my-2 d-flex justify-content-top align-items-center flex-column my-3' style={{ minHeight: "100vh" }}>
+          <div className='p-4' style={{width: "600px" , textAlign:"justify"}}>
+          
+        <h3 style={{ textAlign: "left", marginBottom:"20px" }}><span className='pageText'>Privacy Policy</span></h3>
         <p>One of our top priorities, which can be found at, is the privacy of our visitors. This paper outlines the types of information that collects and records, as well as how we use it.</p>
         <p>Please do not hesitate to contact us if you have any further questions or need additional details about our Privacy Policy.</p>
         <p>This Privacy Policy only applies to our online activities and is applicable to information exchanged and/or collected by visitors to our website. This policy does not extend to data collected outside of this website or by other means. The Privacy Policy Generator was used to build our Privacy Policy.</p>
 
-        <h4>
-          Consent
-        </h4>
-        <p>
-          Through using our website https://newsfeed.com, you consent to and adhere to the terms of our Privacy Policy.
+        <h4>Consent</h4>
+        <p>Through using our website https://newsfeed.com, you consent to and adhere to the terms of our Privacy Policy.
+
+        </p> <h4> Information we collect</h4>
+        <p> The personal information you are asked to provide, as well as the reasons for doing so, will be explained to you at the time you are asked to do so.
+        </p>
+        <p> If you contact us directly, we can obtain additional information about you, such as your name, email address, phone number, the contents of any message and/or attachments you send us, and any other information you choose to provide.
+        </p>
+        <p> We can ask for your contact information when you create an Account, such as your name, company name, address, email address, and phone number.
 
         </p>
-        <h4>
-          Information we collect
-        </h4>
-        <p>
-          The personal information you are asked to provide, as well as the reasons for doing so, will be explained to you at the time you are asked to do so.
-        </p>
-        <p>
-          If you contact us directly, we can obtain additional information about you, such as your name, email address, phone number, the contents of any message and/or attachments you send us, and any other information you choose to provide.
-        </p>
-        <p>
-          We can ask for your contact information when you create an Account, such as your name, company name, address, email address, and phone number.
-
-        </p>
-        <h4>
-          How we use your information
+        <h4> How we use your information
 
         </h4>
         <p>
           We use the data we gather in a variety of ways, including:
         </p>
-        <p>Provide, operate, and maintain our website</p>
-        <p>Improve, personalize, and expand our website</p>
-        <p>Recognize and evaluate how you use our website.</p>
-        <p>Create new products, services, features, and capabilities.</p>
+        <li>Provide, operate, and maintain our website</li>
+        <li>Improve, personalize, and expand our website</li>
+        <li>Recognize and evaluate how you use our website.</li>
+        <li>Create new products, services, features, and capabilities.</li><br />
         <p>Interact with you, either directly or through one of our partners, for a variety of reasons, including customer support, providing you with website updates and other material, and marketing and promotional purposes.</p>
-        <p>Send you emails</p>
-        <p>Find and prevent fraud</p>
-        <p>Log Files</p>
+        <li>Send you emails</li>
+        <li>Find and prevent fraud</li>
+        <li>Log Files</li>
         <p>The use of log files is common practice. When people visit websites, these files record their identities. As part of their analytics, all hosting companies perform this task. Log files collect information such as IP addresses, browser versions, Internet Service Providers (ISPs), date and time stamps, referring/exit sites, and possibly the number of clicks. They are not connected to any personally identifiable information. The information is collected to analyze patterns, operate the platform, monitor users' movements on the site, and gather demographic information.</p>
 
         <h4>
@@ -55,13 +45,13 @@ export const Privacy = () => {
         </h4>
         <p>News Feed, like every other website, uses 'cookies.' These cookies are used to save information such as visitor interests and which pages on the website they accessed or visited. We can enhance the user experience by customizing our web page content based on visitors' browser type and/or other information.</p>
         <p>Please read "What Are Cookies" for more general information on cookies. from Consent to Cookies</p>
-        <p>Google DoubleClick DART Cookie</p>
+        <h3>Google DoubleClick DART Cookie</h3>
         <p>On our platform, Google is one of the third-party vendors. It also employs DART cookies to target advertisements to our site users based on their visits to www.website.com and other websites on the internet. Visitors can opt-out of the use of DART cookies by going to the Google ad and content network Privacy Policy at the following URL – "https://policies.google.com/technologies/ads"</p>
-        <p>Advertising Partners Privacy Policies</p>
+        <h3>Advertising Partners Privacy Policies</h3>
         <p>You will find the Privacy Policies for each of News Feed' advertisement partners in this list.</p>
         <p>Third-party ad servers or ad networks use technologies such as cookies, JavaScript, or Web Beacons in their ads and links, which are delivered directly to users' browsers. When this happens, the IP address is immediately sent to them. These tools are used by advertisers to evaluate the effectiveness of their advertisement campaigns and/or to customize the advertising content you see on websites you visit.</p>
         <p>It's important to note that has no access to or influence over these third-party cookies.</p>
-        <p>Third-Party Privacy Policies</p>
+        <h3>Third-Party Privacy Policies</h3>
         <p>Such ads or blogs are not covered by News Feed' Privacy Policy. As a result, we recommend that you read the Privacy Policies of these third-party ad servers for more details. It may provide details about their operations as well as for instructions about how to opt out of them.</p>
         <p>By modifying the settings in your browser, you can disable cookies. On the websites of the different web browsers, you can find more detailed details about cookie management.</p>
 
@@ -95,7 +85,10 @@ export const Privacy = () => {
 
         <p>
           News Feed can not collect personally identifying information from children under the age of thirteen without their consent. If you think your child provided this kind of information on our website, please contact us immediately so that we can remove it from our records.      </p>      
+        
         </div>
+      </div>
     </div>
+  </div>
   )
 }

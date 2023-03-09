@@ -6,7 +6,6 @@ export const Home = () => {
   return (
     <>
       <div className="container-fluid" >
-      {/* style={{ height: "50vh" }} */}
       </div>
       <FetchData cat="science" />
     </>

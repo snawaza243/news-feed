@@ -8,7 +8,7 @@ function ReactDark() {
 
   return (
     <div className="App d-flex py--3 mb-1">
-      <header className="App-header">
+      <header className="App-header ">
         <h1 className="text-warning">
         {/* Dark/Light Mode */}
          </h1>

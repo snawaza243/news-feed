@@ -1,6 +1,5 @@
 import React from 'react'
 
-import './style.css'
 import { Link, Outlet } from 'react-router-dom';
 export function Footer() {
     // Script from W3 Schools  
@@ -29,7 +28,7 @@ export function Footer() {
                                         <li className='topListItem primary p-1'><Link to="https://www.indiantechnoera.in" >Blog</Link></li>
                                         <li className='topListItem primary p-1'><Link to="./about" >About</Link></li>
                                         <li className='topListItem primary p-1'><Link to="./contact" >Contact</Link></li>
-                                        <li className='topListItem primary p-1'><Link to="./disclaimer" >Disclaimer</Link></li>
+                                        <li className='topListItem primary p-1'><Link to="./disclaimer">Disclaimer</Link></li>
                                         <li className='topListItem primary p-1'><Link to="./privacy" >Privacy</Link></li>
                                         <li className='topListItem primary p-1'><Link to="./terms" >Terms</Link></li>
                                     </ul>
@@ -77,7 +76,7 @@ export function Footer() {
                 </div>
                 <div className="text-center p-1">
                     <h6>
-                        Developed with ❤️ and <a href="https://www.codesam.in"  className='text-white text-decoration-none'><b className='creditText'>CodeSam</b></a>
+                        Developed with ❤️ by <a href="https://www.codesam.in"  className='text-white text-decoration-none'><b className='creditText'>CodeSam</b></a>
                     </h6>
                     <p>© 2023 Copyright : <Link to={"./"} className="text-white text-decoration-none"><b className='creditText'>News Feed</b></Link></p>
                 </div>
