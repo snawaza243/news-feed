@@ -1,7 +1,9 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
-import { Hero } from '../components/Hero';
+import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
+// import { Hero } from '../components/Hero';
 export const Contact = () => {
   const form = useRef();
   const sendEmail = (e) => {
@@ -9,13 +11,11 @@ export const Contact = () => {
 
     emailjs.sendForm('service_cpbg9r8', 'template_obk6mqk', form.current, 'xVHgKvCvjBKn21Gvp')
       .then((result) => {
-        // show the user a success message
-        // <h1>Thank you for reaching use <br />We will reply back as soon as possible</h1>
+        toast("Message sent! ✔️")
         console.log(result.text)
 
       }, (error) => {
-        // show the user an error
-        // <h1>Sorry! I think you are making any mistake <br />Kindly recheck your activity</h1>
+        toast("Sorry message not sent! ❌")
         console.log(error.text)
 
       });
@@ -285,11 +285,13 @@ export const Contact = () => {
                 <option value="Zimbabwe">Zimbabwe</option>
               </select>
               <label for="phone">Phone</label>
-              <input type="text" id="phone" name="phone" placeholder='Phone Number' pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"></input>
+              {/* pattern="[0-9]{3}-[0-9]{2}-[0-9]{3} */}
+              <input className='inputPhoneTag' style={{display:"block", padding:"10px", borderRadius:"5px", border:"1px solid silver", width:"400px"}} type="tel" id="phone" name="phone" placeholder='Phone Number' ></input>
               <label for="message">Message</label>
               <textarea id="message" name="message" placeholder="Write your message" style={{ height: "200px" }}></textarea>
               <input type="hidden" id="submited_From" name="submited_From" value="News Feed" />
               <input className='contactSubmitBtnInput' type="submit" value="Send" style={{ backgroundColor: "black" }} />
+              <ToastContainer />    
             </form>
           </div>
         </div>

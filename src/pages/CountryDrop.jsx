@@ -1,25 +1,6 @@
-import React, { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
-import { createContext } from "react";
-import ReactDark from '../pages/ReactDark';
-import 'react-dropdown/style.css';
-import { countries } from 'country-flag-icons'
-import { Dropdown } from './FetchData';
+import React from 'react'
 
-export const Navbar = () => {
-
-    const styleDark = [{
-        backgroundColor: "#000",
-        color: "#fff"
-    }]
-
-
-    function myFunction(e) {
-        e.preventDefault();
-        var element = document.body;
-        element.classList.toggle(styleDark);
-    }
-
+const App = () => {
     const options = [
         { value: 'AX', label: 'Aland Islands' },
         { value: 'AL', label: 'Albania' },
@@ -274,96 +255,35 @@ export const Navbar = () => {
         { value: 'ZW', label: 'Zimbabwe' }
     ];
 
-     const [value, setValue] = useState('in');
+    const [value, setValue] = React.useState('fruit');
+    const handleChangeCountryName = (event) => {
+        setValue(event.target.value);
 
-
+    };
 
     return (
         <div>
-            <nav className="navbar fixed-top navbar-expand-lg bg-body-tertiary m-0 p-0">
-                <div className="container-fluid bg-light">
-                    <Link className="navbar-brand text-danger border p-2 m-2 shadow myAmin" to="/"><b>NEWS Feed</b></Link>
-                    <button className="navbar-toggler m-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon" ></span>
-                    </button>
-                    <div className="collapse navbar-collapse" id="navbarSupportedContent" style={{ backgroundColor: "#ce0d0d;" }}>
-                        <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li>
-        {/* <Dropdown/> */}
-                            </li>
-                            <li className="nav-item">
-                                <Link className="nav-link active" aria-current="page" to="/">Home</Link>
-                            </li>
-                            <li>
-
-                            </li>
-                            <li className="nav-item">
-                                <Link className="nav-link active" aria-current="page" to="/science">Science</Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link className="nav-link active" aria-current="page" to="/technology">Technology</Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link className="nav-link active" aria-current="page" to="/business">Business</Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link className="nav-link active" aria-current="page" to="health">Health</Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link className="nav-link active" aria-current="page" to="entertainment">Entertainment</Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link className="nav-link active" aria-current="page" to="/sports">Sports</Link>
-                            </li>
-                            <li style={{ margin: "0 5px" }}>
-                                <Link className="nav-link active pageText '" aria-current="page" to="./post" style={{ color: "white", }}>Post News</Link>
-                            </li>
-                            <li className="nav-item">
-                            </li>
-                            <li className="nav-item ">
-                                < ReactDark />
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+            <Dropdown
+                // label="What do we eat?"
+                options={options}
+                value={value}
+                onChange={handleChangeCountryName}
+            />
+            <p>{console.log(value)}</p>
         </div>
-    )
-};
-
-export default function ThemeContextWrapper(props) {
-    const [theme, setTheme] = useState(themes.dark);
-
-    function changeTheme(theme) {
-        setTheme(theme);
-    }
-
-    useEffect(() => {
-        switch (theme) {
-            case themes.light:
-                document.body.classList.add('white-content');
-                break;
-            case themes.dark:
-            default:
-                document.body.classList.remove('white-content');
-                break;
-        }
-    }, [theme]);
-
-    return (
-        <ThemeContext.Provider value={{ theme: theme, changeTheme: changeTheme }}>
-            {props.children}
-        </ThemeContext.Provider>
     );
-}
-
-
-export const themes = {
-    dark: "",
-    light: "white-content",
 };
 
-export const ThemeContext = createContext({
-    theme: themes.dark,
-    changeTheme: () => { },
-});
+const Dropdown = ({ label, value, options, onChange }) => {
+    return (
+        <label>
+            {label}
+            <select value={value} onChange={onChange}>
+                {options.map((option) => (
+                    <option value={option.value}>{option.label}</option>
+                ))}
+            </select>
+        </label>
+    );
+};
+export default App;
