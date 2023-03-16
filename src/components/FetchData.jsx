@@ -4,7 +4,7 @@ import { Hero } from './Hero';
 export const FetchData = ({ cat }) => {
   const [data, setData] = useState("");
 
-  var key = '564424204fdc497b997d68e957fbaff0'
+  var key = '458f6c5923494b5ba42d89fb15e72255'
 
   const fetchData = async () => {
     await axios
@@ -26,7 +26,7 @@ export const FetchData = ({ cat }) => {
 
   var postCat = capitalizeFirstLetter(cat)
   // document.title = cat ? postCat : document.getElementsByClassName("pageText");
-  document.title ="News Feed : " +  postCat;
+  document.title ="News Feeds | " + postCat;
   
   var countLowNameCode = cat ? postCat : document.getElementsByClassName("pageText");
 
@@ -301,6 +301,18 @@ export const FetchData = ({ cat }) => {
     setValue(event.target.value);
   };
 
+  const [server1, setServer1] = useState('458f6c5923494b5ba42d89fb15e72255');
+  const handleChangeServer = (event) => {
+    setServer1(event.target.value);
+  };
+
+  const serversList = [
+    { value: '458f6c5923494b5ba42d89fb15e72255', label: 'Server 1' },
+    { value: '458f6c5923494b5ba42d89fb15e72255', label: 'Server 2' },
+    { value: '458f6c5923494b5ba42d89fb15e72255', label: 'Server 3' },
+
+  ]
+
   const Dropdown = ({ label, value, options, onChange }) => {
     return (
       <label  style={{borderRadius:"5px", padding:"10px", margin:"10px", backgroundColor:"#ce0d0d", color:"white", width:"200px", border:"none"}}>
@@ -308,7 +320,7 @@ export const FetchData = ({ cat }) => {
         <select style={{ backgroundColor:"#ce0d0d", border:"none" , padding:"0px", margin:"0px", color:"white"}} value={value} onChange={onChange}>
           {options.map((option,i) => (
            <>
-           <option value={option.value}>{option.label} {option.i} </option>
+           <option value={option.value} h>{option.label} {option.i} </option>
             <span>{option.i}</span>
            </>
           ))}
@@ -331,8 +343,14 @@ export const FetchData = ({ cat }) => {
             value={value}
             onChange={handleChangeCountryName}
           />}
+
+          // serverLink={<Dropdown
+          //   options={serversList}
+          //   value={server1}
+          //   onChange={handleChangeServer}
+          // />}
         />
-        {value.toLowerCase()}
+        {/* {value.toLowerCase()} */}
       </div>
       <div className='container my-4 ' >
         <div className='container my-2 d-flex justify-content-center align-items-center flex-column my-3' style={{ minHeight: "100vh" }}>

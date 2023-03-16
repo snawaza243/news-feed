@@ -1,9 +1,8 @@
-
 .white-content {
-    background: #616161;
-  }
+  background: #616161;
+}
 
-body{
+body {
   overflow-x: hidden;
 }
 
@@ -37,17 +36,17 @@ input[type=submit]:hover {
 }
 
 
-.contactSubmitBtnInput{
-border: 1px solid rgb(255, 255, 255) !important;
+.contactSubmitBtnInput {
+  border: 1px solid rgb(255, 255, 255) !important;
 }
 
-.contactSubmitBtnInput:hover{
-background-color: rgb(207, 13, 13) !important;
+.contactSubmitBtnInput:hover {
+  background-color: rgb(207, 13, 13) !important;
 
 }
 
-option[value]:hover{
-background-color:rgb(207, 13, 13) 
+option[value]:hover {
+  background-color: rgb(207, 13, 13)
 }
 
 /* Components style */
@@ -217,13 +216,13 @@ a:hover {
 
 #scroll-text {
   /* animation properties */
-  -moz-transform: translateX(100%);
+  -moz-transform: translateX(120%);
   -webkit-transform: translateX(100%);
   transform: translateX(100%);
 
-  -moz-animation: my-animation 15s linear infinite;
-  -webkit-animation: my-animation 15s linear infinite;
-  animation: my-animation 15s linear infinite;
+  -moz-animation: my-animation 20s linear infinite;
+  -webkit-animation: my-animation 20s linear infinite;
+  animation: my-animation 20s linear infinite;
 }
 
 /* for Firefox */
@@ -244,7 +243,7 @@ a:hover {
   }
 
   to {
-    -webkit-transform: translateX(-100%);
+    -webkit-transform: translateX(-105%);
   }
 }
 
@@ -262,22 +261,22 @@ a:hover {
   }
 }
 
-.footerSocialIconHover:hover{
-background-color: hsl(0, 88%, 43%);
-color: white;
+.footerSocialIconHover:hover {
+  background-color: hsl(0, 88%, 43%);
+  color: white;
 }
 
-.footerSubBtnHover:hover{
+.footerSubBtnHover:hover {
   background-color: #ce0d0d;
   color: white !important;
 
 }
 
-.creditText:hover{
+.creditText:hover {
   color: #ce0d0d;
 }
 
-.pageText{
+.pageText {
   background-color: #ce0d0d;
   border-radius: 5px;
   padding: 5px;
@@ -286,23 +285,23 @@ color: white;
 }
 
 
-.fetchDataBoxTrans{
+.fetchDataBoxTrans {
   transition: all 0.3s;
 }
 
-.heroDesc{
+.heroDesc {
   padding: 10px 0;
 }
 
 
-.postHeadStyle{
+.postHeadStyle {
   background-color: #ce0d0d;
   color: white;
   padding: 10px;
   border-radius: 5px;
 }
 
-.postViewMoreStyle{
+.postViewMoreStyle {
   text-decoration: none;
   color: #ce0d0d;
   font-weight: bolder;
@@ -311,10 +310,10 @@ color: white;
   border-radius: 5px;
   margin-top: 30px;
 
-  
+
 }
 
-.postViewMoreStyle:hover{
+.postViewMoreStyle:hover {
   background-color: #ce0d0d;
   color: white;
   /* padding: px; */
@@ -330,23 +329,26 @@ color: white;
   border-radius: 5px;
   display: flex;
   justify-content: center;
-  
+
 
 }
-.topListItem a{
+
+.topListItem a {
   color: white;
   padding: 5px;
   width: 100px;
 }
 
-.topListItem a:hover{
+.topListItem a:hover {
   background-color: #ce0d0d;
   color: white;
   transition: all 0.3s;
 }
 
-.topListItem:hover{
+.topListItem:hover {
   background-color: #ce0d0d;
   color: white;
   transition: all 0.3s;
 }
+
+ 
