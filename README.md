@@ -26,5 +26,5 @@ Thanks For Visiting Our Site
 # Dark Mode Features
 ![NF (8)](https://user-images.githubusercontent.com/91892524/226099348-e41ee4f9-e883-44eb-94e6-9acda48070d2.png)
 
-# Beautifyl Footer
+# Beautiful Footer with Multipage route
 ![NF (10)](https://user-images.githubusercontent.com/91892524/226099354-85c863bf-cf8c-46dc-998d-c6d3bd9634f7.png)
