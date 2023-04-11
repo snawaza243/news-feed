@@ -26,8 +26,8 @@ export const FetchData = ({ cat }) => {
 
   var postCat = capitalizeFirstLetter(cat)
   // document.title = cat ? postCat : document.getElementsByClassName("pageText");
-  document.title ="News Feeds | " + postCat;
-  
+  document.title = "News Feeds | " + postCat;
+
   var countLowNameCode = cat ? postCat : document.getElementsByClassName("pageText");
 
 
@@ -92,7 +92,7 @@ export const FetchData = ({ cat }) => {
 
 
 
-    
+
     { value: 'AX', label: 'Aland Islands' },
     { value: 'AL', label: 'Albania' },
     { value: 'DZ', label: 'Algeria' },
@@ -315,14 +315,14 @@ export const FetchData = ({ cat }) => {
 
   const Dropdown = ({ label, value, options, onChange }) => {
     return (
-      <label  style={{borderRadius:"5px", padding:"10px", margin:"10px", backgroundColor:"#ce0d0d", color:"white", width:"200px", border:"none"}}>
+      <label style={{ borderRadius: "5px", padding: "10px", margin: "10px", backgroundColor: "#ce0d0d", color: "white", width: "200px", border: "none" }}>
         {label}
-        <select style={{ backgroundColor:"#ce0d0d", border:"none" , padding:"0px", margin:"0px", color:"white"}} value={value} onChange={onChange}>
-          {options.map((option,i) => (
-           <>
-           <option value={option.value} h>{option.label} {option.i} </option>
-            <span>{option.i}</span>
-           </>
+        <select style={{ backgroundColor: "#ce0d0d", border: "none", padding: "0px", margin: "0px", color: "white" }} value={value} onChange={onChange}>
+          {options.map((option, i) => (
+            <>
+              <option value={option.value} h>{option.label} {option.i} </option>
+              <span>{option.i}</span>
+            </>
           ))}
         </select>
       </label>
@@ -334,7 +334,7 @@ export const FetchData = ({ cat }) => {
     <>
       <div>
         <Hero
-          info = {"Top 53 country+ all country"}
+          info={"Top 53 country+ all country"}
           cat={cat}
           title=" " i="2"
           newsCat={cat.charAt(0).toUpperCase() + cat.slice(1)}
@@ -344,11 +344,11 @@ export const FetchData = ({ cat }) => {
             onChange={handleChangeCountryName}
           />}
 
-          // serverLink={<Dropdown
-          //   options={serversList}
-          //   value={server1}
-          //   onChange={handleChangeServer}
-          // />}
+        // serverLink={<Dropdown
+        //   options={serversList}
+        //   value={server1}
+        //   onChange={handleChangeServer}
+        // />}
         />
         {/* {value.toLowerCase()} */}
       </div>
