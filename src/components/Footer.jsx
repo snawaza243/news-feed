@@ -75,10 +75,10 @@ export function Footer() {
                     </section>
                 </div>
                 <div className="text-center p-1">
+                    <p>Copyright © 2023 | <Link to={"./"} className="text-white text-decoration-none"><b className='creditText'>News Feed</b></Link></p>
                     <h6>
                         Developed with ❤️ by <a href="https://www.codesam.in"  className='text-white text-decoration-none'><b className='creditText'>CodeSam</b></a>
                     </h6>
-                    <p>© 2023 Copyright : <Link to={"./"} className="text-white text-decoration-none"><b className='creditText'>News Feed</b></Link></p>
                 </div>
             </footer>
             <Outlet />

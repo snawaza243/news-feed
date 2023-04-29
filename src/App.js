@@ -35,8 +35,6 @@ function App() {
           <Route path='/privacy' element={<Privacy />} />
           <Route path='/terms' element={<Term />} />
           <Route path='/post' element={<PostNews />} />
-
-
         </Routes>
         <Footer />
       </BrowserRouter>
