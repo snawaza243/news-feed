@@ -285,7 +285,6 @@ export const Contact = () => {
                 <option value="Zimbabwe">Zimbabwe</option>
               </select>
               <label for="phone">Phone</label>
-              {/* pattern="[0-9]{3}-[0-9]{2}-[0-9]{3} */}
               <input className='inputPhoneTag' style={{display:"block", padding:"10px", borderRadius:"5px", border:"1px solid silver", width:"400px"}} type="tel" id="phone" name="phone" placeholder='Phone Number' ></input>
               <label for="message">Message</label>
               <textarea id="message" name="message" placeholder="Write your message" style={{ height: "200px" }}></textarea>
